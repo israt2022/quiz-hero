@@ -1,0 +1,77 @@
+<h3>1. What is the difference of forEach vs map vs filter vs find?</h3>
+
+<p>
+    ForEach() method allows you to execute a callback function by iterating through each element of an array.It doesn't return anything and if you try to get the value it will be undefined. 
+    <br>
+    Map() executes the same code on every element in an array and returns a new array with the updated elements. <br>
+    Filter() method returns the match value from the array.It search whole array from start to end and returns all the value which is matched. 
+    <br>
+    Find() method return the first value which match from the collection .
+</p>
+
+<h3>2. What is the difference of local storage vs session storage vs cookies?</h3>
+
+<h4>LocalStorage :</h4>
+<ul>
+    <li>Stores data in browser without any expiration data</li>
+    <li>Save data in key/value pairs in the browser </li>
+    <li>Data is not deleted when the browser is closed</li>
+    <li>Data is available for future sessions</li>
+</ul>
+
+<h4>Session storage :</h4>
+<ul>
+    <li>Stores data in browser for a session</li>
+    <li>Saves data in key/value pairs in the browser</li>
+    <li>Data is deleted when the browser is closed</li>
+    <li>Data is not available for future sessions</li>
+</ul>
+
+<h4>Cookies :</h4>
+<ul>
+    <li>Data stored in small text file </li>
+    <li>Naturally sent by visited websites </li>
+    <li>Sent to users computer through browser</li>
+    <li>Is not a program, doesn't perform any function</li>
+    <li>Stored in key-value pair</li>
+</ul>
+
+<h3>3. What is event loop? How does it works?</h3>
+
+<p>The event loop is an architectural design pattern that allows code to run asynchronously on the javascript engines and makes it possible for code to execute blocking instructions first and when available execute asynchronous functions. 
+<br>
+The event loop utilizes three major components, Call Stack, Event Queue, and WebAPIs/C++ APIs. It manages function calls in a way that asynchronous events would go into the event queue and will be called only after the call stack is empty.</p>
+
+
+
+
+
+<!-- details of function -->
+<h3>
+    1. quizTimer function: 
+</h3>
+<ul>
+    <li>check has dismiss or not. if has then clear timer and return</li>
+    <li>
+        set intervel with time and change count html and add/remove class
+    </li>
+</ul>
+<h3>2. chooseQuiz function: </h3>
+<ul>
+   <li>
+    this function has 2 parameter (index & givenAns)
+   </li>
+   <li>
+    check given ans already exist or not
+   </li>
+   <li>
+    if exist then update given ans
+   </li>
+   <li> 
+    if not exitst push givenAns in quizData array
+   </li>
+   <li>finally,  call displayAnswer function with answers parament</li>
+   <li>
+    displayAnswer function add given answers list in html div
+   </li>
+</ul>
